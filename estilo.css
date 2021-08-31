@@ -1,0 +1,414 @@
+body{
+    background-image: url(img/fondo2.png);
+    overflow-x: hidden;
+    font-family: 'Gentium Book Basic', serif; 
+    
+}
+
+
+.ola{
+    font-weight: bold;
+}
+
+.home h1{
+    margin: 20px;
+    font-size: 35px;
+    color: black;
+    background-image: url(img/fondo.png);
+
+}
+
+.home img{
+    width: 100%;
+}
+
+.fo{
+padding: 0px;
+}
+
+
+
+/*---cuaderno-------------------------*/
+
+.cuaderno{
+    color: black;
+    padding-bottom: 50px;
+}
+
+.cuaderno h1{
+  background-image: url(img/fondo.png);
+  font-size: 35px;
+}
+
+.cuaderno img{
+    width: 30vh;
+}
+
+ button{
+  background-image: url(img/fondo.png);
+  font-weight: bold;
+  color: black;
+  border-radius: 6px;
+  text-decoration: none;
+  border: oldlace;
+  transition:all .4s;
+}
+
+button:hover{
+  transform: translateY(-10px) scale(1.1);
+}
+
+.proceso{
+    color: black;
+    padding-bottom: 50px;
+    
+}
+
+.proceso h1{
+  background-image: url(img/fondo.png);
+  font-size: 35px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.proceso img{
+    width: auto;
+    height: 35vh;
+    
+
+}
+
+
+
+.d{
+  margin: 5vh;
+}
+
+/*----comunidad-------*/
+.comunidad{
+  background-image: url(img/fondo.png);
+}
+
+.comunidad img{
+  padding: 5vh;
+  height: 45vh;
+}
+
+
+
+
+
+
+/*--------------*/
+.main {
+    width: 100%;
+    padding: 50px;
+    display: grid;
+    place-items: center;
+    
+  }
+  
+.accordion-container {
+    padding: none;
+    margin: none;
+    display: flex;
+    width: 35vw;
+    background-color: #d6cabf;
+    padding: 3.5rem;
+    border-radius: 20px;
+}
+  
+
+  
+  .accordion-faq {
+    position: relative;
+    
+  }
+  
+  /* accordion */
+  .tab {
+    border-radius: 20px;
+    margin: 5vh;
+    background-color: white;
+    font-weight: 400;
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: all ease-in-out 0.4s;
+  }
+  
+  label {
+    font-size: 16px;
+    padding-bottom: 18px;
+    border-bottom: 2px solid hsl(240, 5%, 91%);
+  }
+  
+  .tab-content {
+    font-size: 14px;
+    color:#000000;
+    background-color: white;
+    display: none;
+ 
+  }
+  
+  .tab input:checked ~ .tab-content {
+    transition: all ease-in-out 0.4s;
+    display: block;
+  }
+  
+  .tab input {
+    display: none;
+  }
+  
+  /* accordion-label */
+  .tab label {
+    display: block;
+    background: white;
+    color:  #4d4239;
+    cursor: pointer;
+  }
+  
+  .tab label:after {
+    font-size: 1.5rem;
+    content: "\002c6";
+    position: relative;
+    display: inline-block;
+    left: 1rem;
+    top: -0.5rem;
+    transform-origin: center center;
+    transform: rotate(180deg);
+    transition: all ease-in-out 0.3s;
+    color: hsl(14, 88%, 65%);
+  }
+  
+  input:checked + label {
+    font-weight: 700;
+  }
+  
+  .tab input:checked + label:after {
+    left:5.25rem;
+    top: 0.4rem;
+    transform-origin: center;
+    transform: scaleY(1);
+    font-weight: 700;
+  }
+  
+  /* accordion-content */
+  .tab-content {
+    cursor: default;
+    overflow: hidden;
+    /* CSS animation will not work with auto height */
+    /* This is why we use max-height */
+    transition: all ease-in-out 0.4s;
+    max-height: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .tab input:checked ~ .tab-content {
+    /* Set the max-height to a large number */
+    /* Or 100% viewport height */
+    max-height:10vh;
+    max-width:30vh;
+    transition: all ease-in-out 0.4s;
+  }
+  
+  /* attribution */
+  .attribution {
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+
+
+
+  /*---futer---*/
+
+  #footer{
+    background-image: url(img/fondo.png);
+  }
+  /* media query */
+@media screen and (max-width: 375px) {
+
+    html{
+      overflow-x: hidden;
+    }
+
+    .main {
+      width: 100%;
+      padding: 50px;
+      display: grid;
+      place-items: center;
+      
+    }
+    
+  .accordion-container {
+      padding: none;
+      margin: none;
+      display: flex;
+      width: 40vw;
+      height: 70vh;
+      background-color: #6b1e1e00;
+      padding: 3.5rem;
+      border-radius: 20px;
+  }
+  
+  .main h1{
+    text-align: center;
+    margin-left: 2vh;
+    margin-top: -21vh;
+    font-size: 5vh;
+    
+  }  
+    
+    .accordion-faq {
+      position: relative;
+      top: 40px; 
+      right: 13vh;
+    }
+    
+    /* accordion */
+    .tab {
+      border-radius: 20px;
+      margin: 5vh;
+      background-color: white;
+      font-weight: 400;
+      cursor: pointer;
+      margin-left: 10px;
+      padding: 10px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      outline: none;
+      transition: all ease-in-out 0.4s;
+    }
+    
+    label {
+      font-size: 16px;
+      padding-bottom: 18px;
+      border-bottom: 2px solid hsl(240, 5%, 91%);
+    }
+    
+    .tab-content {
+      font-size: 14px;
+      color:#000000;
+      background-color: white;
+      display: none;
+   
+    }
+    
+    .tab input:checked ~ .tab-content {
+      transition: all ease-in-out 0.4s;
+      display: block;
+    }
+    
+    .tab input {
+      display: none;
+    }
+    
+    /* accordion-label */
+    .tab label {
+      display: block;
+      background: white;
+      color:  #4d4239;
+      cursor: pointer;
+ 
+    }
+    
+    .tab label:after {
+      font-size: 1.5rem;
+      content: "\002c6";
+      position: relative;
+      display: inline-block;
+      left: 1rem;
+      top: -0.5rem;
+      transform-origin: center center;
+      transform: rotate(180deg);
+      transition: all ease-in-out 0.3s;
+      color: hsl(14, 88%, 65%);
+    }
+    
+    input:checked + label {
+      font-weight: 700;
+    }
+    
+    .tab input:checked + label:after {
+      left:5.25rem;
+      top: 0.4rem;
+      transform-origin: center;
+      transform: scaleY(1);
+      font-weight: 700;
+    }
+    
+    /* accordion-content */
+    .tab-content {
+      cursor: default;
+      overflow: hidden;
+      /* CSS animation will not work with auto height */
+      /* This is why we use max-height */
+      transition: all ease-in-out 0.4s;
+      max-height: 0;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    
+    .tab input:checked ~ .tab-content {
+      /* Set the max-height to a large number */
+      /* Or 100% viewport height */
+      max-height:10vh;
+      max-width:30vh;
+      transition: all ease-in-out 0.4s;
+    }
+    
+    /* attribution */
+    .attribution {
+      font-size: 14px;
+      text-align: center;
+    }
+    
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+    
+    .attribution,
+    footer {
+      display: n2one;
+    }
+
+
+    .d  { 
+      margin: 5px;
+      padding: 5px;
+    }
+
+    #home h1{
+      font-size: 5vh;
+      margin-top: 10vh;
+      margin-bottom: 10vh;
+    }
+   
+    .proceso h1{
+      font-size: 3vh;
+      padding: 0px;
+      margin: 0px;
+      margin-top: 1vh;
+      margin-bottom: 1vh;
+     }
+
+
+  }
+
+  
+
+  .cuaderno h1{
+    margin: 55px;
+    margin-bottom: 0px;
+   }
